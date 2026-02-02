@@ -15,7 +15,7 @@ return {
     pyright = {},
     ruff = {
     settings = {
-      configuration = "~/.config/nvim/ruff.toml",
+      configuration = "~/.config/ruff/ruff.toml",
     },
     },
   },
