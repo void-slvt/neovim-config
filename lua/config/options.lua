@@ -38,4 +38,15 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+-- Цвет MiniIndentscope
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = "#6CB6FF" })
+
+-- nvim-treesitter
+vim.api.nvim_create_autocmd("FileType", {
+  callback = function()
+    local lang = vim.treesitter.language.get_lang(vim.bo.filetype)
+    if lang then
+      pcall(vim.treesitter.start)
+    end
+  end,
+})

@@ -1,0 +1,30 @@
+return {
+  'nvim-treesitter/nvim-treesitter',
+  lazy = false,
+  build = ':TSUpdate',
+  config = function()
+      require('nvim-treesitter').install({
+          'bash',
+          'c',
+          'caddy',
+          'cmake',
+          'comment',
+          'cpp',
+          'css',
+          'csv',
+          'dockerfile',
+          'gitignore',
+          'html',
+          'ini',
+          'json',
+          'lua',
+          'make',
+          'markdown',
+          'nginx',
+          'python',
+          'requirements',
+          'toml',
+          'yaml',
+      })
+  end,
+}

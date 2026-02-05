@@ -1,7 +1,6 @@
 return {
     {
       "echasnovski/mini.indentscope",
-      version = false,
 
       opts = {
         symbol = "│",
@@ -33,7 +32,6 @@ return {
   },
   {
       "echasnovski/mini.trailspace",
-      version = false,
       opts = {}
   }
 }
